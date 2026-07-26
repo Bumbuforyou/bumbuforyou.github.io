@@ -236,7 +236,354 @@ h2{
 
 font-size:54px;
 
+font-family:'Cormorant Garamond',serif;/* ===========================
+   ОБО МНЕ
+=========================== */
+
+.about{
+background:#111;
+}
+
+.about p{
+max-width:900px;
+margin:0 auto 50px;
+font-size:20px;
+text-align:center;
+color:#d6d6d6;
+}
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+margin-top:40px;
+
+}
+
+.card{
+
+background:#181818;
+
+padding:40px 20px;
+
+border-radius:20px;
+
+text-align:center;
+
+border:1px solid rgba(212,175,55,.2);
+
+transition:.35s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+border-color:#d4af37;
+
+}
+
+.card h3{
+
+font-size:52px;
+
+color:#d4af37;
+
+margin-bottom:10px;
+
 font-family:'Cormorant Garamond',serif;
+
+}
+
+.card span{
+
+font-size:18px;
+
+color:#bbb;
+
+}
+
+/* ===========================
+   ПОРТФОЛИО
+=========================== */
+
+.portfolio{
+
+background:#0f0f0f;
+
+}
+
+.projects{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+margin-top:60px;
+
+}
+
+.project{
+
+background:#181818;
+
+border-radius:24px;
+
+overflow:hidden;
+
+transition:.4s;
+
+}
+
+.project:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 50px rgba(0,0,0,.4);
+
+}
+
+.project-image{
+
+height:280px;
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+/* Используй свои фотографии */
+
+.papasha{
+
+background-image:url("images/papasha/1.jpg");
+
+}
+
+.kaiser{
+
+background-image:url("images/kaiser/1.jpg");
+
+}
+
+.teliani{
+
+background-image:url("images/teliani/1.jpg");
+
+}
+
+.project h3{
+
+font-size:32px;
+
+padding:25px 25px 10px;
+
+font-family:'Cormorant Garamond',serif;
+
+color:#d4af37;
+
+}
+
+.project a{
+
+display:inline-block;
+
+margin:0 25px 30px;
+
+padding:12px 24px;
+
+background:#d4af37;
+
+color:#111;
+
+border-radius:40px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.project a:hover{
+
+background:#f2cf5a;
+
+}
+
+/* ===========================
+   ЭКСКУРСИИ
+=========================== */
+
+.excursions{
+
+background:#151515;
+
+}
+
+.excursions p{
+
+max-width:900px;
+
+margin:0 auto 50px;
+
+text-align:center;
+
+font-size:20px;
+
+color:#d0d0d0;
+
+}
+
+.excursion-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+.excursion-grid div{
+
+background:#1b1b1b;
+
+padding:30px;
+
+border-radius:18px;
+
+text-align:center;
+
+border:1px solid rgba(212,175,55,.15);
+
+transition:.3s;
+
+}
+
+.excursion-grid div:hover{
+
+transform:translateY(-8px);
+
+border-color:#d4af37;
+
+}
+
+/* ===========================
+   КОНТАКТЫ
+=========================== */
+
+.contacts{
+
+background:#0d0d0d;
+
+text-align:center;
+
+}
+
+.contact-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+margin-top:40px;
+
+}
+
+.contact-buttons a{
+
+padding:15px 28px;
+
+border-radius:40px;
+
+background:#d4af37;
+
+text-decoration:none;
+
+color:#111;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.contact-buttons a:hover{
+
+transform:translateY(-5px);
+
+}
+
+footer{
+
+padding:35px;
+
+text-align:center;
+
+background:#080808;
+
+color:#888;
+
+}
+
+/* ===========================
+   МОБИЛЬНАЯ ВЕРСИЯ
+=========================== */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:44px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.navbar ul{
+
+display:none;
+
+}
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+.projects{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-buttons{
+
+flex-direction:column;
+
+}
+
+}
+   
 
 text-align:center;
 
