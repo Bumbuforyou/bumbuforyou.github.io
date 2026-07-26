@@ -4,922 +4,272 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-Бумбу Вячеслав | Строительство и Кёнигсберг
-</title>
+<title>Вячеслав Бумбу | Индивидуальные экскурсии | Портфолио</title>
 
+<link rel="stylesheet" href="style.css">
 
-<style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-
-*{
-
-margin:0;
-padding:0;
-box-sizing:border-box;
-
-font-family:
-Georgia,
-"Times New Roman",
-serif;
-
-scroll-behavior:smooth;
-
-}
-
-
-
-body{
-
-background:#17130f;
-
-color:#eee2c6;
-
-}
-
-
-
-
-.hero{
-
-height:100vh;
-
-background:
-
-linear-gradient(
-rgba(20,15,10,.65),
-rgba(5,8,15,.85)
-),
-
-url("https://images.unsplash.com/photo-1569336415962-a4bd9f69c07b")
-
-center/cover fixed;
-
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-text-align:center;
-
-padding:25px;
-
-position:relative;
-
-}
-
-
-
-
-.hero::after{
-
-
-content:"";
-
-position:absolute;
-
-inset:0;
-
-
-background:
-
-radial-gradient(
-
-ellipse at center,
-
-rgba(212,175,55,.15),
-
-transparent 60%
-
-);
-
-
-}
-
-
-
-.hero-content{
-
-position:relative;
-
-z-index:2;
-
-max-width:900px;
-
-
-}
-
-
-
-.hero h1{
-
-font-size:60px;
-
-letter-spacing:3px;
-
-color:#f0d27a;
-
-margin-bottom:20px;
-
-
-}
-
-
-
-.hero h2{
-
-font-size:28px;
-
-margin-bottom:25px;
-
-color:#fff;
-
-}
-
-
-
-.hero p{
-
-font-size:21px;
-
-line-height:1.7;
-
-
-}
-
-
-
-.btn{
-
-
-display:inline-block;
-
-margin:30px 10px;
-
-padding:15px 35px;
-
-
-border-radius:50px;
-
-
-background:
-
-linear-gradient(
-135deg,
-#d4af37,
-#987020
-);
-
-
-color:#111;
-
-
-text-decoration:none;
-
-font-weight:bold;
-
-
-transition:.3s;
-
-
-}
-
-
-
-.btn:hover{
-
-transform:translateY(-5px);
-
-box-shadow:
-0 10px 30px
-rgba(212,175,55,.4);
-
-
-}
-
-
-
-section{
-
-padding:80px 10%;
-
-}
-
-
-
-.title{
-
-
-font-size:40px;
-
-text-align:center;
-
-margin-bottom:40px;
-
-color:#d4af37;
-
-
-}
-
-
-
-.about{
-
-
-font-size:20px;
-
-line-height:1.8;
-
-text-align:center;
-
-}
-
-
-
-.cards{
-
-
-display:grid;
-
-grid-template-columns:
-
-repeat(
-auto-fit,
-minmax(250px,1fr)
-);
-
-
-gap:30px;
-
-
-}
-
-
-
-.card{
-
-
-background:
-
-linear-gradient(
-145deg,
-#30261c,
-#17130f
-);
-
-
-border:
-
-1px solid
-
-rgba(212,175,55,.25);
-
-
-padding:30px;
-
-
-border-radius:20px;
-
-
-text-align:center;
-
-
-transition:.4s;
-
-
-}
-
-
-
-.card:hover{
-
-transform:translateY(-10px);
-
-
-}
-
-
-
-.card h3{
-
-
-font-size:30px;
-
-color:#d4af37;
-
-
-}
-
-
-
-.card p{
-
-
-margin-top:15px;
-
-font-size:18px;
-
-
-}<style>
-
-
-footer{
-
-background:#090704;
-
-padding:35px;
-
-text-align:center;
-
-color:#aaa;
-
-}
-
-
-/* Плавное появление блоков */
-
-section{
-
-animation:show 1s ease;
-
-}
-
-
-@keyframes show{
-
-from{
-
-opacity:0;
-
-transform:translateY(40px);
-
-}
-
-
-to{
-
-opacity:1;
-
-transform:translateY(0);
-
-}
-
-}
-
-
-
-
-@media(max-width:700px){
-
-
-.hero h1{
-
-font-size:38px;
-
-}
-
-
-.hero h2{
-
-font-size:20px;
-
-}
-
-
-.hero p{
-
-font-size:17px;
-
-}
-
-
-section{
-
-padding:50px 25px;
-
-}
-
-
-.title{
-
-font-size:30px;
-
-}
-
-
-.btn{
-
-display:block;
-
-margin:15px auto;
-
-max-width:250px;
-
-}
-
-
-}
-
-
-
-</style>
-
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 </head>
 
-
 <body>
 
+<header>
 
+<nav class="navbar">
 
-<div class="hero">
+<div class="logo">
 
+Вячеслав Бумбу
+
+</div>
+
+<ul>
+
+<li><a href="#about">Обо мне</a></li>
+
+<li><a href="#portfolio">Портфолио</a></li>
+
+<li><a href="#excursions">Экскурсии</a></li>
+
+<li><a href="#contacts">Контакты</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="overlay"></div>
 
 <div class="hero-content">
 
-
 <h1>
-Бумбу Вячеслав
+
+Индивидуальные экскурсии<br>
+по Калининграду
+
 </h1>
 
-
-<h2>
-Строительство • Экскурсии • История Кёнигсберга
-</h2>
-
-
-
 <p>
 
-Создаю проекты, которыми можно гордиться.
-
-<br>
-
-Показываю Калининградскую область через историю,
-архитектуру и судьбы людей.
+История Кёнигсберга, уникальные маршруты и современные проекты ресторанов,
+в создании которых я принимал участие.
 
 </p>
 
+<div class="hero-buttons">
 
-
-<a href="#about" class="btn">
-
-Узнать больше
-
+<a href="#excursions" class="btn">
+Экскурсии
 </a>
 
-
-</div>
-
-
-</div>
-
-
-
-
-
-<section id="about">
-
-
-<h2 class="title">
-
-Обо мне
-
-</h2>
-
-
-<div class="about">
-
-
-<p>
-
-Меня зовут Бумбу Вячеслав.
-
-</p>
-
-
-<br>
-
-
-<p>
-
-Моя профессиональная деятельность связана
-со строительством и эксплуатацией зданий и сооружений.
-
-</p>
-
-
-<br>
-
-
-<p>
-
-Более 10 лет я работаю в сфере строительства,
-создавая пространства, которые становятся частью города.
-
-</p>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section>
-
-
-<h2 class="title">
-
-Строительные проекты
-
-</h2>
-
-
-
-<div class="cards">
-
-
-
-<div class="card">
-
-
-<h3>
-ТЕЛИАНИ
-</h3>
-
-
-<p>
-
-ул. Октябрьская
-
-<br>
-
-Строительный проект
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<h3>
-
-Кайзер Вурст
-
-</h3>
-
-
-<p>
-
-ул. Колоскова
-
-<br>
-
-Реализованный объект
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<h3>
-
-Папаша Беппе
-
-</h3>
-
-
-<p>
-
-ул. Герцена
-
-<br>
-
-Создание пространства
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</section><section>
-
-
-<h2 class="title">
-Опыт и достижения
-</h2>
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<h3>
-10+
-</h3>
-
-<p>
-Лет опыта в строительстве
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-100+
-</h3>
-
-<p>
-Индивидуальных экскурсий
-по Калининградской области
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-3
-</h3>
-
-<p>
-Крупных ресторанных проекта
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-∞
-</h3>
-
-<p>
-Развитие, новые знания
-и новые цели
-</p>
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section>
-
-
-<h2 class="title">
-Кёнигсберг — история города
-</h2>
-
-
-
-<div class="about">
-
-
-<p>
-
-Калининградская область хранит уникальное наследие
-старого Кёнигсберга.
-
-</p>
-
-
-<br>
-
-
-<p>
-
-На экскурсиях я рассказываю о старых кварталах,
-кирпичной архитектуре, Кафедральном соборе,
-острове Кнайпхоф и людях, которые создавали этот город.
-
-</p>
-
-
-<br>
-
-
-<p>
-
-Каждая прогулка — это не просто маршрут,
-а история, которую можно увидеть и почувствовать.
-
-</p>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section>
-
-
-<h2 class="title">
-Мои качества
-</h2>
-
-
-
-<div class="cards">
-
-
-
-<div class="card">
-
-<h3>
-💪
-</h3>
-
-<p>
-Целеустремлённость
-</p>
-
-</div>
-
-
-
-
-<div class="card">
-
-<h3>
-⚒
-</h3>
-
-<p>
-Практический опыт
-</p>
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<h3>
-🎯
-</h3>
-
-<p>
-Ответственность за результат
-</p>
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<h3>
-💡
-</h3>
-
-<p>
-Развитие и новые идеи
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section>
-
-
-<h2 class="title">
-Связаться со мной
-</h2>
-
-
-
-<div class="about">
-
-
-<p>
-
-Открыт к новым проектам,
-сотрудничеству и интересным знакомствам.
-
-</p>
-
-
-
-<br>
-
-
-
-<a class="btn"
-href="https://wa.me/79211048088">
-
-WhatsApp
-
+<a href="#portfolio" class="btn btn-outline">
+Портфолио
 </a>
 
-
-
-<a class="btn"
-href="https://t.me/bboomboxi">
-
-Telegram
-
-</a>
-
-
-
-<a class="btn"
-href="https://instagram.com/bumbu_foryou">
-
-Instagram
-
-</a>
-
-
+</div>
 
 </div>
 
+</section>
+
+<section id="about" class="about">
+
+<div class="container">
+
+<h2>Обо мне</h2>
+
+<p>
+
+Меня зовут Вячеслав Бумбу.
+
+Более 10 лет я занимаюсь профессиональной отделкой коммерческих помещений и ресторанов.
+
+Сегодня я также провожу индивидуальные экскурсии по Калининграду, рассказывая историю старого Кёнигсберга, архитектуру города и его самые интересные места.
+
+</p>
+
+<div class="stats">
+
+<div class="card">
+
+<h3>10+</h3>
+
+<span>лет опыта</span>
+
+</div>
+
+<div class="card">
+
+<h3>30+</h3>
+
+<span>реализованных объектов</span>
+
+</div>
+
+<div class="card">
+
+<h3>3</h3>
+
+<span>крупных ресторанных проекта</span>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
+<section id="portfolio" class="portfolio">
 
+<div class="container">
 
+<h2>Мои проекты</h2>
 
+<p class="subtitle">
+
+Некоторые рестораны, в строительстве и отделке которых я принимал участие.
+
+</p>
+
+<div class="projects">
+
+<div class="project">
+
+<div class="project-image papasha"></div>
+
+<h3>Papasha Beppe</h3>
+
+<a href="#">Открыть проект</a>
+
+</div>
+
+<div class="project">
+
+<div class="project-image kaiser"></div>
+
+<h3>Kaiser Wurst</h3>
+
+<a href="#">Открыть проект</a>
+
+</div>
+
+<div class="project">
+
+<div class="project-image teliani"></div>
+
+<h3>Teliani</h3>
+
+<a href="#">Открыть проект</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="excursions" class="excursions">
+
+<div class="container">
+
+<h2>Индивидуальные экскурсии</h2>
+
+<p>
+
+Покажу Калининград таким, каким его знают местные жители.
+
+История Кёнигсберга, форты, районы Амалиенау, остров Канта, секретные места и лучшие виды города.
+
+</p>
+
+<div class="excursion-grid">
+
+<div>
+
+✔ Индивидуальный маршрут
+
+</div>
+
+<div>
+
+✔ Без больших групп
+
+</div>
+
+<div>
+
+✔ История города простым языком
+
+</div>
+
+<div>
+
+✔ Фотолокации
+
+</div>
+
+<div>
+
+✔ Автомобильные экскурсии
+
+</div>
+
+<div>
+
+✔ Полезные советы туристам
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contacts" class="contacts">
+
+<div class="container">
+
+<h2>Связаться со мной</h2>
+
+<p>
+
+Записаться на экскурсию или обсудить сотрудничество можно любым удобным способом.
+
+</p>
+
+<div class="contact-buttons">
+
+<a href="#">WhatsApp</a>
+
+<a href="#">Telegram</a>
+
+<a href="#">Instagram</a>
+
+</div>
+
+</div>
+
+</section>
 
 <footer>
 
-
-<p>
-© 2026 Бумбу Вячеслав
-</p>
-
-
-<p>
-Калининградская область
-</p>
-
+© 2026 Вячеслав Бумбу
 
 </footer>
 
-
-
+<script src="script.js"></script>
 
 </body>
-
 </html>
