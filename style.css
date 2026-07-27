@@ -118,6 +118,7 @@ linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
 url("images/hero/hero.jpg");
 background-size:cover;
 background-position:center;
+background-repeat:no-repeat;
 }
 
 .overlay{
@@ -253,21 +254,22 @@ box-shadow:0 30px 60px rgba(0,0,0,.55);
 height:340px;
 background-size:cover;
 background-position:center;
+background-repeat:no-repeat;
 border-bottom:1px solid rgba(255,255,255,.05);
 }
 
-/* ЗАМЕНИ ПОТОМ ТОЛЬКО НАЗВАНИЯ ФОТО */
+/* ===== ФОТО ПРОЕКТОВ ===== */
 
 .papasha{
-background-image:url("images/papasha/1.jpg");
+background-image:url("images/papasha/IMG_0033.jpg");
 }
 
 .kaiser{
-background-image:url("images/kaiser/1.jpg");
+background-image:url("images/kaiser/IMG_0471.jpg");
 }
 
 .teliani{
-background-image:url("images/teliani/1.jpg");
+background-image:url("images/teliani/IMG_6745.jpg");
 }
 
 .project-info{
@@ -347,13 +349,6 @@ transition:.3s;
 transform:translateY(-5px);
 }
 
-footer{
-padding:35px;
-text-align:center;
-background:#080808;
-color:#888;
-}
-
 /*=====================================
 ГАЛЕРЕЯ ПРОЕКТОВ
 ======================================*/
@@ -378,106 +373,12 @@ cursor:pointer;
 transform:scale(1.03);
 }
 
+footer{
+padding:35px;
+text-align:center;
+background:#080808;
+color:#888;
+}
+
 /*=====================================
 МОБИЛЬНАЯ ВЕРСИЯ
-======================================*/
-
-@media(max-width:900px){
-
-.navbar{
-height:auto;
-padding:18px;
-flex-direction:column;
-gap:15px;
-}
-
-.navbar ul{
-display:none;
-}
-
-.hero{
-height:90vh;
-}
-
-.hero h1{
-font-size:46px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-h2{
-font-size:40px;
-}
-
-section{
-padding:90px 0;
-}
-
-.stats{
-grid-template-columns:1fr;
-}
-
-.projects{
-grid-template-columns:1fr;
-}
-
-.project-image{
-height:260px;
-}
-
-.gallery{
-grid-template-columns:1fr;
-}
-
-.contact-buttons{
-flex-direction:column;
-align-items:center;
-}
-
-.hero-buttons{
-flex-direction:column;
-align-items:center;
-}
-
-.btn{
-width:280px;
-text-align:center;
-}
-
-}
-
-@media(max-width:600px){
-
-.logo{
-font-size:28px;
-}
-
-.hero h1{
-font-size:36px;
-}
-
-.hero p{
-font-size:17px;
-}
-
-.about p,
-.excursions p,
-.contacts p{
-font-size:18px;
-}
-
-.card{
-padding:30px 20px;
-}
-
-.project-info{
-padding:22px;
-}
-
-.project-info h3{
-font-size:28px;
-}
-
-}
