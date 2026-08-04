@@ -8,7 +8,7 @@ form.addEventListener("submit", async function (e) {
     const date = document.getElementById("date").value;
     const promo = document.getElementById("promo").value;
 
-    const response = await fetch("ВСТАВИ_СЮДА_ССЫЛКУ_WORKERS", {
+    const response = await fetch("https://small-dream-cf2b.slava-bumbu2020.workers.dev", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
